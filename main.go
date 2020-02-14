@@ -13,7 +13,6 @@ import (
 
 func main() {
 	const configDir = "config"
-	baseDir, _ := os.Getwd()
 	tokenPath := filepath.Join(baseDir, configDir)
 	token, _ := common.ReadToken(filepath.Join(tokenPath, "token.json"))
 
